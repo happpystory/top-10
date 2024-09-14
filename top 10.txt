@@ -1,0 +1,21 @@
+I want to create two projects:
+1 - drag and drop over some map or list
+2 - a map of some country, and you type all the capitals.
+
+
+For (1), it will be a list of some sort.
+
+maybe a map of europe, and you drag and drop the flags? I think this is good. But I also like the list of names. So, I will do both.
+First, I Will do the list, and then the map of flags.
+
+Why not have multple [list] games, and the user can choose? 
+1 - top 10 countries by population
+2 - top 10 countries by gdp
+3 - top 10 cities by population 
+
+
+So, next, I will do a front-page where people choose which top-10 list they want to play, and then add the 3 pages with these 3 games.
+
+Actually, I have decided to do only 1 game. I will do the one by population.
+
+Then, I will do (2)

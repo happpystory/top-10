@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root { 
+    --border-color: #e3e5e4;
+    --background-color: #c3c7ca;
+    --text-color: #34444f;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+h1 { 
+    margin-bottom: 0;
+}
+
+.draggable-list { 
+    color: var(--text-color);
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.draggable-list li { 
+    border: 1px solid var(--border-color);
+    display: flex;
+    height: 50px;
+    /* border-radius: 100px; */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%; */
+
+    background: #ddd;
+
+}
+
+
+.draggable-list li.over .draggable { 
+    background-color: #eaeaea;
+}
+
+.draggable-list .country-name { 
+    margin: 0 20px 0 0;
+    font-size: 20px;
+}
+
+
+.draggable-list li.right .country-name { 
+    color: #3ae374;
+}
+
+.draggable-list li.wrong .country-name { 
+    color: #ff3838;
+}
+
+.draggable { 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    flex: 3;
+    width: 100%;
+}
+
+.country__flex-wrapper { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.name__wrapper { 
+    display: flex;
+    align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.grip__icon-wrapper { 
+    padding-right: 10px;
+}
+
+.flag__wrapper { 
+    width: 100px;
+    height: 100%;
+    border-radius: 100px;
+    /* clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%); */
+    margin-left: -20px;
+}
+
+.flag__wrapper img { 
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.check-btn { 
+    background-color: var(--background-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.check-btn:active { 
+    transform: scale(0.98);
+}
+
+.check-btn:focus { 
+    outline: none;
+}
+
+.button-wrapper { 
+    padding-bottom: 20px;
+}
+
+.view__wrapper { 
+    border: 1px solid var(--border-color);
+    display: flex;
+    width: 600px;
+    padding: 10px;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.rank__wrapper ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rank__wrapper ul li { 
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: #f1f1f1;
+
+}
